@@ -4,6 +4,9 @@ let number = 0;
 if (Text. length < 5) {
     alert ("You can write min 5 symbols");
 }
+else if (Text. length > 5) {
+    alert ("You can write max 5 symbols");
+}
 
 switch (Text. charAt(0)) {
     case "a":
@@ -80,5 +83,6 @@ switch (Text. charAt(4)) {
         number -= 1; 
     break;
 }
-
-alert ("Your value is"  +  " " + number);
+if (Text. length == 5) {
+    alert ("Your value is"  +  " " + number);
+}
